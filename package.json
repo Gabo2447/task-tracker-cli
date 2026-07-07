@@ -1,0 +1,13 @@
+{
+  "name": "tasktracker",
+  "module": "src/main.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^26.1.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
