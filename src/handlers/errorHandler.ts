@@ -19,15 +19,15 @@ export class ErrorValidation extends Error {
 }
 
 export class ErrorNotFound extends Error {
-  private field: string;
+  private field: string | number;
 
-  constructor(field: string) {
+  constructor(field: string | number) {
     super(`❌ [ERROR]: ${field} not found`);
     this.name = "ErrorNotFound";
     this.field = field;
   }
 
-  public getField(): string {
+  public getField(): string | number {
     return this.field;
   }
 }
