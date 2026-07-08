@@ -1,10 +1,10 @@
 # Task Tracker CLI 🟢🟡⚪
 
+This is a solution to the [Task Tracker challenge on roadmap.sh](https://roadmap.sh/projects/task-tracker).
+
 A robust, production-ready Command Line Interface (CLI) application built to track and manage your daily tasks. This project strictly adheres to the backend roadmap challenges from roadmap.sh.
 
 Developed using **TypeScript** and powered by **Bun**, this application features a decoupled, command-oriented architecture, a defensive data-validation layer, and a native JSON-based persistence system.
-
----
 
 ## 🚀 Features
 
@@ -14,15 +14,11 @@ Developed using **TypeScript** and powered by **Bun**, this application features
 - **Resilient Design:** Zero external dependencies; utilizes Bun's native high-performance file system APIs.
 - **Defensive Architecture:** Built-in semantic error handlers to catch invalid arguments or corrupt data gracefully.
 
----
-
 ## 🛠️ Tech Stack & Requirements
 
 - **Runtime:** [Bun](https://bun.sh/) (v1.0.0 or higher)
 - **Language:** TypeScript
 - **OS Tested:** Ubuntu 24.04.4 LTS / Linux
-
----
 
 ## 📦 Installation & Setup
 
@@ -112,7 +108,7 @@ All records are written cleanly in a local `task.json` database in the root fold
 }
 ```
 
-# 🏗️ Architecture Overview
+## 🏗️ Architecture Overview
 
 The project follows a modular layout designed for scalability:
 
@@ -121,7 +117,5 @@ The project follows a modular layout designed for scalability:
 - **src/commands/:** Domain logic split into granular, single-responsibility files.
 - **src/handlers/:** Centralized business exception handler (ErrorNotFound, ErrorValidation).
 - **src/types.ts:** Strict compilation-level type contracts.
-
----
 
 Developed with ☕ and discipline. Happy coding!
